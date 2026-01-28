@@ -4,7 +4,7 @@
 
 %global crate jsonc-parser
 
-Name:           rust-jsonc-parser
+Name:           rust-jsonc-parser0.27
 Version:        0.27.1
 Release:        %autorelease
 Summary:        JSONC parser

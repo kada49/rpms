@@ -4,7 +4,7 @@
 
 %global crate quick-junit
 
-Name:           rust-quick-junit
+Name:           rust-quick-junit0.3
 Version:        0.3.6
 Release:        %autorelease
 Summary:        Data model and serializer for JUnit/XUnit XML
