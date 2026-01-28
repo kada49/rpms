@@ -5,7 +5,7 @@
 %global crate anes
 
 Name:           rust-anes0.1
-Version:        0.1.6
+Version:        0.1.5
 Release:        %autorelease
 Summary:        ANSI Escape Sequences provider & parser
 
