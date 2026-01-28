@@ -1,0 +1,8 @@
+--- opentelemetry-0.27.1/Cargo.toml	1970-01-01T00:00:01+00:00
++++ opentelemetry-0.27.1/Cargo.toml	2026-01-28T20:24:38.393722+00:00
+@@ -116,5 +116,3 @@
+     "thiserror",
+ ]
+ 
+-[target.'cfg(all(target_arch = "wasm32", not(target_os = "wasi")))'.dependencies.js-sys]
+-version = "0.3.63"
