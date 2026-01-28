@@ -7,7 +7,7 @@
 Name:           rust-anes0.1
 Version:        0.1.5
 Release:        %autorelease
-Summary:        ANSI Escape Sequences provider & parser
+Summary:        ANSI escape sequences
 
 License:        MIT OR Apache-2.0
 URL:            https://crates.io/crates/anes
@@ -16,7 +16,7 @@ Source:         %{crates_source}
 BuildRequires:  cargo-rpm-macros >= 24
 
 %global _description %{expand:
-ANSI Escape Sequences provider & parser.}
+An ANSI escape sequences.}
 
 %description %{_description}
 
@@ -44,30 +44,6 @@ This package contains library source intended for building other packages which
 use the "default" feature of the "%{crate}" crate.
 
 %files       -n %{name}+default-devel
-%ghost %{crate_instdir}/Cargo.toml
-
-%package     -n %{name}+bitflags-devel
-Summary:        %{summary}
-BuildArch:      noarch
-
-%description -n %{name}+bitflags-devel %{_description}
-
-This package contains library source intended for building other packages which
-use the "bitflags" feature of the "%{crate}" crate.
-
-%files       -n %{name}+bitflags-devel
-%ghost %{crate_instdir}/Cargo.toml
-
-%package     -n %{name}+parser-devel
-Summary:        %{summary}
-BuildArch:      noarch
-
-%description -n %{name}+parser-devel %{_description}
-
-This package contains library source intended for building other packages which
-use the "parser" feature of the "%{crate}" crate.
-
-%files       -n %{name}+parser-devel
 %ghost %{crate_instdir}/Cargo.toml
 
 %prep
