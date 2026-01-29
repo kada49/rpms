@@ -13,6 +13,7 @@ Summary:        Implementation of regular expressions for Rust
 License:        MIT OR Apache-2.0
 URL:            https://crates.io/crates/regex
 Source:         %{crates_source}
+Patch:          fix-python3-shebang.diff
 
 BuildRequires:  cargo-rpm-macros >= 24
 
