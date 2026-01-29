@@ -5,7 +5,7 @@
 %global crate plotters
 
 Name:           rust-plotters
-Version:        0.3.1
+Version:        0.3.5
 Release:        %autorelease
 Summary:        Rust drawing library focus on data plotting for both WASM and native applications
 
@@ -34,10 +34,7 @@ use the "%{crate}" crate.
 
 %files          devel
 %license %{crate_instdir}/LICENSE
-%doc %{crate_instdir}/CHANGELOG.md
-%doc %{crate_instdir}/CONTRIBUTING.md
 %doc %{crate_instdir}/README.md
-%doc %{crate_instdir}/RELEASE-NOTES.md
 %{crate_instdir}/
 
 %package     -n %{name}+default-devel
@@ -50,6 +47,18 @@ This package contains library source intended for building other packages which
 use the "default" feature of the "%{crate}" crate.
 
 %files       -n %{name}+default-devel
+%ghost %{crate_instdir}/Cargo.toml
+
+%package     -n %{name}+ab_glyph-devel
+Summary:        %{summary}
+BuildArch:      noarch
+
+%description -n %{name}+ab_glyph-devel %{_description}
+
+This package contains library source intended for building other packages which
+use the "ab_glyph" feature of the "%{crate}" crate.
+
+%files       -n %{name}+ab_glyph-devel
 %ghost %{crate_instdir}/Cargo.toml
 
 %package     -n %{name}+all_elements-devel
@@ -160,6 +169,18 @@ use the "chrono" feature of the "%{crate}" crate.
 %files       -n %{name}+chrono-devel
 %ghost %{crate_instdir}/Cargo.toml
 
+%package     -n %{name}+colormaps-devel
+Summary:        %{summary}
+BuildArch:      noarch
+
+%description -n %{name}+colormaps-devel %{_description}
+
+This package contains library source intended for building other packages which
+use the "colormaps" feature of the "%{crate}" crate.
+
+%files       -n %{name}+colormaps-devel
+%ghost %{crate_instdir}/Cargo.toml
+
 %package     -n %{name}+datetime-devel
 Summary:        %{summary}
 BuildArch:      noarch
@@ -208,6 +229,18 @@ use the "evcxr" feature of the "%{crate}" crate.
 %files       -n %{name}+evcxr-devel
 %ghost %{crate_instdir}/Cargo.toml
 
+%package     -n %{name}+evcxr_bitmap-devel
+Summary:        %{summary}
+BuildArch:      noarch
+
+%description -n %{name}+evcxr_bitmap-devel %{_description}
+
+This package contains library source intended for building other packages which
+use the "evcxr_bitmap" feature of the "%{crate}" crate.
+
+%files       -n %{name}+evcxr_bitmap-devel
+%ghost %{crate_instdir}/Cargo.toml
+
 %package     -n %{name}+font-kit-devel
 Summary:        %{summary}
 BuildArch:      noarch
@@ -218,6 +251,30 @@ This package contains library source intended for building other packages which
 use the "font-kit" feature of the "%{crate}" crate.
 
 %files       -n %{name}+font-kit-devel
+%ghost %{crate_instdir}/Cargo.toml
+
+%package     -n %{name}+fontconfig-dlopen-devel
+Summary:        %{summary}
+BuildArch:      noarch
+
+%description -n %{name}+fontconfig-dlopen-devel %{_description}
+
+This package contains library source intended for building other packages which
+use the "fontconfig-dlopen" feature of the "%{crate}" crate.
+
+%files       -n %{name}+fontconfig-dlopen-devel
+%ghost %{crate_instdir}/Cargo.toml
+
+%package     -n %{name}+full_palette-devel
+Summary:        %{summary}
+BuildArch:      noarch
+
+%description -n %{name}+full_palette-devel %{_description}
+
+This package contains library source intended for building other packages which
+use the "full_palette" feature of the "%{crate}" crate.
+
+%files       -n %{name}+full_palette-devel
 %ghost %{crate_instdir}/Cargo.toml
 
 %package     -n %{name}+histogram-devel
@@ -266,6 +323,18 @@ This package contains library source intended for building other packages which
 use the "line_series" feature of the "%{crate}" crate.
 
 %files       -n %{name}+line_series-devel
+%ghost %{crate_instdir}/Cargo.toml
+
+%package     -n %{name}+once_cell-devel
+Summary:        %{summary}
+BuildArch:      noarch
+
+%description -n %{name}+once_cell-devel %{_description}
+
+This package contains library source intended for building other packages which
+use the "once_cell" feature of the "%{crate}" crate.
+
+%files       -n %{name}+once_cell-devel
 %ghost %{crate_instdir}/Cargo.toml
 
 %package     -n %{name}+pathfinder_geometry-devel
