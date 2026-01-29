@@ -1,0 +1,11 @@
+--- Cargo.toml	1970-01-01 01:00:00.000000000 +0100
++++ Cargo.toml.new	2026-01-29 09:27:31.713689671 +0100
+@@ -16,7 +16,7 @@
+ authors = ["Elichai Turkel <elichai.turkel@gmail.com>"]
+ include = ["**/*.rs", "Cargo.toml"]
+ description = "Rust library for a random trait meant to produce random generic types"
+-readme = "README.md"
++readme = false
+ keywords = ["rand", "random", "random-rs", "rng"]
+ categories = ["algorithms", "no-std", "development-tools::testing", "cryptography"]
+ license = "MIT/Apache-2.0"

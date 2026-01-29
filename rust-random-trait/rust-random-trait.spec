@@ -13,6 +13,7 @@ Summary:        Rust library for a random trait meant to produce random generic 
 License:        MIT OR Apache-2.0
 URL:            https://crates.io/crates/random-trait
 Source:         %{crates_source}
+Patch:          fix-missing-readme.diff
 
 BuildRequires:  cargo-rpm-macros >= 24
 
