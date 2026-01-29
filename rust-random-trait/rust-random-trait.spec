@@ -6,7 +6,7 @@
 
 Name:           rust-random-trait
 Version:        0.1.1
-Release:        2
+Release:        3
 Summary:        Rust library for a random trait meant to produce random generic types
 
 # Upstream license specification: MIT/Apache-2.0
