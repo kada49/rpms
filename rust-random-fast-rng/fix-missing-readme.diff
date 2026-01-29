@@ -1,0 +1,11 @@
+--- random-fast-rng-0.1.1/Cargo.toml	2026-01-29 18:43:48.331924962 +0100
++++ random-fast-rng-0.1.1/Cargo.toml	2026-01-29 18:44:11.980935775 +0100
+@@ -16,7 +16,7 @@
+ authors = ["Elichai Turkel <elichai.turkel@gmail.com>"]
+ include = ["**/*.rs", "Cargo.toml"]
+ description = "Rust library for Blazing fast non cryptographic random number generator"
+-readme = "README.md"
++readme = false
+ keywords = ["rand", "random", "random-rs", "rng"]
+ categories = ["algorithms", "no-std", "development-tools::testing"]
+ license = "MIT/Apache-2.0"

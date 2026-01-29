@@ -6,13 +6,14 @@
 
 Name:           rust-random-fast-rng
 Version:        0.1.1
-Release:        %autorelease
+Release:        2
 Summary:        Rust library for Blazing fast non cryptographic random number generator
 
 # Upstream license specification: MIT/Apache-2.0
 License:        MIT OR Apache-2.0
 URL:            https://crates.io/crates/random-fast-rng
 Source:         %{crates_source}
+Patch:          fix-missing-readme.diff
 
 BuildRequires:  cargo-rpm-macros >= 24
 
