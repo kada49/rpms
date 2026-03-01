@@ -51,7 +51,7 @@ use the "default" feature of the "%{crate}" crate.
 %autosetup -n %{crate}-%{version} -p1
 %cargo_prep
 
-%generate_buildrequires
+# %generate_buildrequires
 # %cargo_generate_buildrequires
 
 %build
