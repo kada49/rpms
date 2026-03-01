@@ -52,7 +52,7 @@ use the "default" feature of the "%{crate}" crate.
 %cargo_prep
 
 %generate_buildrequires
-%cargo_generate_buildrequires
+# %cargo_generate_buildrequires
 
 %build
 %cargo_build
