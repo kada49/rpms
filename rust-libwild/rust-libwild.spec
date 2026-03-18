@@ -12,6 +12,7 @@ Summary:        Library that provides a fast Linux linker
 License:        MIT OR Apache-2.0
 URL:            https://crates.io/crates/libwild
 Source:         %{crates_source}
+Patch:          libwild-dont-update-perf_event.diff
 
 BuildRequires:  cargo-rpm-macros >= 24
 
