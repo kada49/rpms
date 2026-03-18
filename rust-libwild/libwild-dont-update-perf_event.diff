@@ -1,0 +1,8 @@
+--- libwild-0.8.0/Cargo.toml	1970-01-01T00:00:01+00:00
++++ libwild-0.8.0/Cargo.toml  2026-03-18 13:05:22.760624082 +0100
+@@ -220,4 +220,4 @@
+ version = "0.8.0"
+
+ [target.'cfg(all(target_os = "linux", any(target_arch = "x86_64", target_arch = "aarch64")))'.dependencies.perf-event]
+-version = "0.4.8"
++version = "=0.4.8"
