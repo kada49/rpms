@@ -39,7 +39,7 @@ License:        # FIXME
 %{_bindir}/ld.wild
 
 %package     -n wild
-%description -n %{crate} %{_description}
+Summary:        Very fast linker for Linux
 Provides:       wild-linker = %{version}-%{release}
 
 %prep
