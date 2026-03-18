@@ -15,6 +15,9 @@ Patch:          fix-missing-dep.diff
 
 BuildRequires:  cargo-rpm-macros >= 24
 
+Requires(post): alternatives
+Requires(postun): alternatives
+
 %global _description %{expand:
 A very fast linker for Linux.}
 
@@ -33,6 +36,10 @@ License:        # FIXME
 %license LICENSE.dependencies
 %doc README.md
 %{_bindir}/wild
+%{_bindir}/ld.wild
+
+%package     -n wild
+Provides:       wild-linker = %{version}-%{release}
 
 %prep
 %autosetup -n %{crate}-%{version} -p1
@@ -48,6 +55,17 @@ License:        # FIXME
 
 %install
 %cargo_install
+ln -s %{_bindir}/ld.wild %{buildroot}%{_bindir}/wild
+
+%post
+if [ "$1" = 1 ]; then
+  update-alternatives --install %{_bindir}/ld ld %{_bindir}/ld.wild 1
+fi
+
+%postun
+if [ "$1" = 0 ]; then
+  update-alternatives --remove ld %{_bindir}/ld.wild
+fi
 
 %if %{with check}
 %check
