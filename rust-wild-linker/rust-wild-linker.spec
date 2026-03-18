@@ -39,6 +39,7 @@ License:        # FIXME
 %{_bindir}/ld.wild
 
 %package     -n wild
+%description -n %{crate} %{_description}
 Provides:       wild-linker = %{version}-%{release}
 
 %prep
