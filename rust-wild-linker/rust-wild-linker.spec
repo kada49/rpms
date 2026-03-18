@@ -11,6 +11,7 @@ Summary:        Very fast linker for Linux
 License:        MIT OR Apache-2.0
 URL:            https://crates.io/crates/wild-linker
 Source:         %{crates_source}
+Patch:          fix-missing-dep.diff
 
 BuildRequires:  cargo-rpm-macros >= 24
 
