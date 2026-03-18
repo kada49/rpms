@@ -41,7 +41,7 @@ License:        # FIXME
 %package     -n wild
 Summary:        Very fast linker for Linux
 Provides:       wild-linker = %{version}-%{release}
-%description -n %{crate} %{_description}
+%description -n wild %{_description}
 
 %prep
 %autosetup -n %{crate}-%{version} -p1
