@@ -57,7 +57,7 @@ Provides:       wild-linker = %{version}-%{release}
 
 %install
 %cargo_install
-ln -s wild %{buildroot}%{_bindir}/ld.wild
+ln -sr %{buildroot}%{_bindir}/wild %{buildroot}%{_bindir}/ld.wild
 
 %post
 if [ "$1" = 1 ]; then
